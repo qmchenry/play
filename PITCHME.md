@@ -5,10 +5,10 @@
 ---
 
 ## Why GenKit?
-<span style="font-size:1.2em; color:#29B8EB">Safe</span> |
-<span style="font-size:1.2em; color:#29B8EB">Lazy</span>
+<span style="font-size:5.2em; color:#29B8EB">Safe</span> |
+<span style="font-size:5.2em; color:#29B8EB">Lazy</span>
 
-We don't usually get to be lazy *and* safe
+We don't usually get to be lazy _and_ safe
 
 +++
 
@@ -27,3 +27,17 @@ We don't usually get to be lazy *and* safe
 * Allow non-developers to make changes without touching code
 
 ---
+
+## Using GenKit
+Build | Run | Automate
+
++++
+
+## Build
+
+* Written in Swift
+* Built with Swift Package Manager
+
++++
+
+```swift build
