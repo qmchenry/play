@@ -8,22 +8,20 @@
 <span style="font-size:0.6em; color:gray">Safe</span> |
 <span style="font-size:0.6em; color:gray">Lazy</span>
 
+We don't usually get to be lazy **and** safe
+
 +++
 
 ## Safe
-#### Type safe constants across platforms
 
-<br>
-
-* Definitions are made in human-readable and -writable YAML files
+* Define data in human--writable YAML files
 * Single source of string or other constants
-* Simple templates transform YAML data into any text format
+* Templates transform data into whatever you need
 * Parity between platforms
 
 +++
 
 ## Lazy
-#### We usually don't get to be lazy **and** safe
 
 * Automate repetetive code generation
 * Allow non-developers to change values without touching code
