@@ -174,7 +174,7 @@ groups:
 
 ---
 
-## Built with
+## Assembled with
 
 * <a href="https://github.com/jatoben/CommandLine" target="_blank">github.com/jatoben/CommandLine</a>
 * <a href="https://github.com/behrang/YamlSwift" target="_blank">github.com/behrang/YamlSwift</a>
@@ -182,3 +182,7 @@ groups:
 * <a href="https://github.com/kylef/Stencil" target="_blank">github.com/kylef/Stencil</a>
 * <a href="https://github.com/nvzqz/FileKit" target="_blank">github.com/nvzqz/FileKit</a>
 * <a href="https://github.com/apple/swift" target="_blank">github.com/apple/swift</a>
+
+---?image=assets/sm1.jpg
+
+## Built with ❤️ & 🍕 in Brooklyn
