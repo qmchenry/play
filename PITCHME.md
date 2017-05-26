@@ -48,7 +48,7 @@ swift build
 
 ## Run
 
-```bash
+```text
 > .build/debug/gen
 
 Usage: .build/debug/gen [options]
@@ -76,6 +76,7 @@ gen -i input.yaml -t template.mustache
 
 <span style="font-size:0.8em; color:gray">Processes data in **input.yaml** using the Mustache template **template.mustache**, sends output to stdout.</span>
 
++++
 
 ## Run
 
