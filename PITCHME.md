@@ -5,18 +5,18 @@
 ---
 
 ## Why GenKit?
-<span style="font-size:0.6em; color:gray">Safe</span> |
-<span style="font-size:0.6em; color:gray">Lazy</span>
+<span style="font-size:1.2em; color:#29B8EB">Safe</span> |
+<span style="font-size:1.2em; color:#29B8EB">Lazy</span>
 
-We don't usually get to be lazy **and** safe
+We don't usually get to be lazy *and* safe
 
 +++
 
 ## Safe
 
-* Define data in human--writable YAML files
-* Single source of string or other constants
-* Templates transform data into whatever you need
+* Define data in human-writable YAML files
+* Templates transform data into whatever
+* Single source of constants
 * Parity between platforms
 
 +++
@@ -24,6 +24,6 @@ We don't usually get to be lazy **and** safe
 ## Lazy
 
 * Automate repetetive code generation
-* Allow non-developers to change values without touching code
+* Allow non-developers to make changes without touching code
 
 ---
