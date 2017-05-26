@@ -25,6 +25,7 @@ We don't usually get to be lazy _and_ safe
 
 * Automate repetetive code generation
 * Allow non-developers to make changes without touching code
+* Finally replace someone with a tiny shell script
 
 ---
 
@@ -48,7 +49,7 @@ swift build
 
 ## Run
 
-```text
+```asciidoc
 > .build/debug/gen
 
 Usage: .build/debug/gen [options]
@@ -70,7 +71,7 @@ Usage: .build/debug/gen [options]
 
 ## Run
 
-```bash
+```asciidoc
 gen -i input.yaml -t template.mustache
 ```
 
@@ -80,11 +81,30 @@ gen -i input.yaml -t template.mustache
 
 ## Run
 
-```bash
+```asciidoc
 gen -i input.yaml -t template.stencil -s
 ```
 
 <span style="font-size:0.8em; color:gray">Processes data in **input.yaml** using the Stencil template **template.stencil** because of -s option.</span>
+
+---
+
+## Newness Checks
+
+GenKit checks files to avoid uneccesary work, generates only when one of these conditions is met:
+
+* output file does not exist
+* input newer than output
+* template newer than output
+
++++
+
+## Compare Files
+
+* Optional command line argument -c or --compare
+* Accepts multiple files (space separated)
+* Generates if any compare file is newer than output
+
 
 ---
 
@@ -151,3 +171,14 @@ groups:
 ---
 
 ## Integration/Automation
+
+---
+
+## Built with
+
+* <a href="https://github.com/jatoben/CommandLine" target="_blank">github.com/jatoben/CommandLine</a>
+* <a href="https://github.com/behrang/YamlSwift" target="_blank">github.com/behrang/YamlSwift</a>
+* <a href="https://github.com/IBM-Swift/GRMustache.swift" target="_blank">github.com/IBM-Swift/GRMustache.swift</a>
+* <a href="https://github.com/kylef/Stencil" target="_blank">github.com/kylef/Stencil</a>
+* <a href="https://github.com/nvzqz/FileKit" target="_blank">github.com/nvzqz/FileKit</a>
+* <a href="https://github.com/apple/swift" target="_blank">github.com/apple/swift</a>
