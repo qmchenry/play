@@ -63,6 +63,8 @@ Usage: .build/debug/gen [options]
       Output file (writes to stdout if not provided)
   -c, --compare:
       Files to compare modification dates against (multiple values separated by space)
+      -q, --quiet:
+          Suppress non-error output
 ```
 
 <span style="font-size:0.8em; color:gray">Without options, gen prints usage</span>
@@ -85,7 +87,28 @@ gen -i input.yaml -t template.mustache
 gen -i input.yaml -t template.stencil -s
 ```
 
-<span style="font-size:0.8em; color:gray">Processes data in **input.yaml** using the Stencil template **template.stencil** because of -s option.</span>
+<span style="font-size:0.8em; color:gray">Considers **template.stencil** a Stencil template because of -s option.</span>
+
++++
+
+## Run
+
+```asciidoc
+gen -i input.yaml -t template.stencil -s -o out.txt
+```
+
+<span style="font-size:0.8em; color:gray">Writes data to file out.txt instead of stdout.</span>
+
++++
+
+## Run
+
+```asciidoc
+gen -i input.yaml -t template.stencil -s -o out.txt \
+    -c compare1.txt,compare2.txt
+```
+
+<span style="font-size:0.8em; color:gray">Does not generate out.txt if it is newer than compare1.txt and compare2.txt in addition to template.stencil and input.yaml.</span>
 
 ---
 
@@ -183,10 +206,10 @@ groups:
 * <a href="https://github.com/nvzqz/FileKit" target="_blank">github.com/nvzqz/FileKit</a>
 * <a href="https://github.com/apple/swift" target="_blank">github.com/apple/swift</a>
 
----?image=assets/sm1.jpg
+---
 
-## Built with ❤️ & 🍕 in Brooklyn
+### Built with ❤️ & 🍕 in Brooklyn
 
 <br/>
 
-&nbsp;
+## by Small Planet
