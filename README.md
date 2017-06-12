@@ -1,3 +1,3 @@
 # play
 
-<img src="https://raw.githubusercontent.com/qmchenry/play/master/lion.svg"/>
+<img src="http://qmchenry.com/lion.svg"/>
